@@ -1,1 +1,175 @@
-Front page html code will be here!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid Project</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+
+</head>
+
+<body>
+
+	<div class="main">
+    <img src="/static/background.jpg" style="position: absolute; z-index: -1; height: 430px; width: 1521px ;">
+		<h1 style="text-align: center; font-size: 54px;  padding-top: 120px; color: white; text-shadow: 2px 1px white  " >
+      Covid-19 Prediction & Visualization</h1>
+	</div>
+
+  <div class="Visualization" id="common">
+    <img src = "/static/covid_globe.gif" alt= "map" class="img1" style="float: none">
+    <h2><a href="https://www.google.com/" target="_blank">Covid Visualization</a></h2>
+    <p>As others have mentioned, the standard font varies, but is usually a serif font such as</p>
+  </div>
+
+  <div class="predict" id="common">
+		<img src = "/static/covid_pred.gif" alt= "prediction" class="img2" style="float: none">
+    <h2><a href="#open">Covid Prediction</a></h2>
+    <p>This tool will tell you the probability of Covid-19 infection based on some values </p>
+	</div>
+    
+  <div class="Information" id="common">
+    <img src = "/static/covid_info.gif" alt= "Information" class="img3" style="float: none">
+		<h2><a href="https://www.google.com/" target="_blank">Covid Information</a></h2>
+    <p>As others have mentioned, the standard font varies, but is usually a serif font such </p>
+	</div>
+
+  <!-- virus -->
+  <div class="mainBody" id="virus-1">
+    <div class="vBody vcolor1">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="vWings"></div>
+    <div class="vWings tentacle-2"></div>
+    <div class="vWings tentacle-3"></div>
+    <div class="vWings tentacle-4"></div>
+    <div class="vWings tentacle-5"></div>
+    <div class="vWings tentacle-6"></div>
+    <div class="vWings tentacle-7"></div>
+    <div class="vWings tentacle-8"></div>
+    <div class="vWings tentacle-9"></div>
+  </div>
+  <div class="mainBody" id="virus-2">
+    <div class="vBody vColor2">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="vWings"></div>
+    <div class="vWings tentacle-2"></div>
+    <div class="vWings tentacle-3"></div>
+    <div class="vWings tentacle-4"></div>
+    <div class="vWings tentacle-5"></div>
+    <div class="vWings tentacle-6"></div>
+    <div class="vWings tentacle-7"></div>
+    <div class="vWings tentacle-8"></div>
+    <div class="vWings tentacle-9"></div>
+  </div>
+  <div class="mainBody" id="virus-3">
+    <div class="vBody vColor2">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="vWings"></div>
+    <div class="vWings tentacle-2"></div>
+    <div class="vWings tentacle-3"></div>
+    <div class="vWings tentacle-4"></div>
+    <div class="vWings tentacle-5"></div>
+    <div class="vWings tentacle-6"></div>
+    <div class="vWings tentacle-7"></div>
+    <div class="vWings tentacle-8"></div>
+    <div class="vWings tentacle-9"></div>
+  </div>
+  
+  <div class="mainBody " id="virus-4">
+    <div class="vBody vColor3 ">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="vWings"></div>
+    <div class="vWings tentacle-2"></div>
+    <div class="vWings tentacle-3"></div>
+    <div class="vWings tentacle-4"></div>
+    <div class="vWings tentacle-5"></div>
+    <div class="vWings tentacle-6"></div>
+    <div class="vWings tentacle-7"></div>
+    <div class="vWings tentacle-8"></div>
+    <div class="vWings tentacle-9"></div>
+  </div>
+
+  <!-- form -->
+  <div id="open" class="formDiv">
+      <p style="font-size: 38px; text-align: center;margin-top: 40px;margin-bottom: 40px">Coronavirus Probability Detector</p>
+      <form action="/" method="POST">
+        <div class="row">
+          <div class="first" style="margin-top: 15px">
+            <label for="fever">Body Temperature</label>
+          </div>
+          <div class="second">
+            <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter Fever Value" autocomplete="off" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="first">
+            <label for="age">Age</label>
+          </div>
+          <div class="second">
+            <input type="text" class="form-control" id="age" name="age" placeholder="Enter you Age" autocomplete="off" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="first">
+            <label for="pain">Body Pain</label>
+          </div>
+          <div class="second">
+            <select class="form-control custom-select" name="pain" id="pain" autocomplete="off" required>
+            <option value="0">No Pain</option>
+            <option value="1">Severe Pain</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="first">
+            <label for="runnyNose">Runny Nose</label>
+          </div>
+          <div class="second">
+            <select class="form-control custom-select" name="runnyNose" id="runnyNose" required>
+              <option value="0">Yes</option>
+              <option value="1">No</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="first" style="margin-top: 16px;">
+            <label for="diffBreath">Breathing Difficulty</label>
+          </div>
+          <div class="second">
+            <select class="form-control custom-select" name="diffBreath" id="diffBreath" required>
+              <option value="-1">No Difficulty</option>
+              <option value="0">Little Difficulty</option>
+              <option value="1">Severe Difficulty</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="button" style="vertical-align: middle"><span>Submit</span></button>
+
+      </form>
+  </div>  
+	
+</body>
+</html>
