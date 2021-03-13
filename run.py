@@ -21,7 +21,7 @@ def hello_world():
         infProb = clf.predict_proba([inputFeatures])[0][1]
         print(infProb)
 
-        if((infProb*100) <= 50):
+        if(round(infProb*100) <= 50):
             return render_template('showbelow.html', inf=round(infProb*100))
         else:
             return render_template('showabove.html', inf=round(infProb*100))
