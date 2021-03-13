@@ -12,12 +12,18 @@
         }
         #map{
             width: 100vw;
-            height: 100vh;
+            height: 110vh;
         }
     </style>
     <title>CovidMap</title>
+    <script type = "text/javascript" src="map.js"></script>  
 </head>
 <body>
+    <div id ="expression">
+        <h4>Choose one of the following:</h4>
+        <a href="#" onclick="updateMap1()">Confirmed</a> |
+        <a href="#" onclick="updateMap2()">Deaths</a>
+    </div>
     <div id='map' ></div>
 </body>
 
@@ -30,7 +36,5 @@
     style: 'mapbox://styles/mapbox/streets-v11'
   });
 </script>
-
-   <!-- <script src=""> </script> script to be added here--> 
 
 </html>
