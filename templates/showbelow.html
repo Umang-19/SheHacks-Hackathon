@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>COVID-19 Probability Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 0 10px;
+    }
+    
+    .row {margin: 0 -5px;}
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    footer {
+          text-align: center;
+          padding: 3px;
+          background-color: white;
+          color: gray;
+          }
+    
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 600px;
+      }
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f0a6ff;
+    }
+    h1 {text-align: center;}
+    .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+}
+    </style>
+    
+  </head>
+
+  <body>
+    <h1>Coronavirus Probability Detector</h1>
+<div class="row">
+  
+  <div class="column">
+    <div class="card">
+        <br>
+      <h1><b>Probability of Covid Infection is {{inf}}%.</b></h1>
+      <br>
+      <img src="covid_bp.gif" alt="Vaccination gif" width="300" height="200" class="center"/> 
+      <button class="btn btn-success my-2 my-sm-0" type="submit">
+          Go Back
+      </button>
+      <br>
+      <p> Get Vaccinated and stay safe, Click on the following link if you are an Indian National to get information about covid-19 and to get Vaccinated.</p>
+      <br>
+      <form action="https://www.cowin.gov.in/home">
+        <input type="submit" value="CoWIN Website" />
+      </form>
+      <br>
+      <h2>Thanks for using Covid Probability detector!</h2>
+      <br>
+    </div>
+  </div>
+  <div class="column">
+      <img src="Fighting against Coronavirus.gif" alt="Vaccination gif" width="700" height="700" /> 
+  </div>
+</div>
+<footer>
+        <a href="https://storyset.com/coronavirus">Illustration by Freepik Storyset</a>
+</footer>
+</body>
+  </body>
+</html>
