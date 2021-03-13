@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+from sklearn.linear_model import LogisticRegression
+import pickle
 
 def data_split(data, ratio):
     np.random.seed(42)
@@ -22,6 +24,11 @@ if __name__ == "__main__":
     Y_train = train[['infectionProb']].to_numpy().reshape(len(df) - int(len(df) * 0.2),)
     Y_test = test[['infectionProb']].to_numpy().reshape(int(len(df) * 0.2),)
 
-    #Fitting the model
+
     clf = LogisticRegression()
     clf.fit(X_train, Y_train)
+
+    file = open('model.pkl', 'wb')
+    
+    pickle.dump(clf, file)
+    file.close()
